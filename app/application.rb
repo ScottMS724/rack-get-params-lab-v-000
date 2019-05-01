@@ -28,7 +28,7 @@ class Application
         @@cart << search_term
         resp.write "added #{search_term}"
       end 
-    elsif handle_search(search_term) = false 
+    elsif handle_search(search_term) == false 
       resp.write "We don't have that item"
     end
 
