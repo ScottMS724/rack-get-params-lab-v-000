@@ -26,7 +26,7 @@ class Application
       search_term = req.params["item"]
       if handle_search(search_term)
         @@cart << search_term
-        resp.write "Added #{search_term}"
+        resp.write "added #{search_term}"
       end 
     else
       resp.write "Path Not Found"
