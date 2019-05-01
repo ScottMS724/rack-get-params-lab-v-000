@@ -29,7 +29,7 @@ class Application
         resp.write "added #{search_term}"
       end 
     else
-      resp.write "Path Not Found"
+      resp.write "We don't have that item"
     end
 
     resp.finish
